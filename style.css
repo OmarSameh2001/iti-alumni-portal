@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+  word-spacing: 0rem;
+  color: #901b20;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  max-width: 100vw;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar img {
+  width: 100px;
+}
+.navbar h1 {
+  margin: 0;
+  font-weight: bold;
+  color: #901b20;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: scroll;
+}
+.navbar li {
+  margin-right: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar a:hover {
+  background-color: #901b20;
+  color: #fff;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .header {
+  width: fit-content;
+  text-align: center;
+  padding: 20px 0px;
+  max-width: 80vw;
+}
+.content .header p {
+  text-decoration: underline;
+}
+
+.numbers {
+  width: fit-content;
+  max-width: 80vw;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(218, 218, 218, 0.5);
+}
+
+.numbers .header {
+  text-align: left;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.numbers .header .vertical-line {
+  width: 10px;
+  background-color: #901b20;
+  height: 100px;
+}
+
+.numbers * {
+  color: #203947;
+}
+
+.numbers .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-y: auto;
+  justify-content: space-between;
+}
+.numbers .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.numbers .cards .card * {
+    margin: 5px;
+}
+
+.numbers .cards .card .number {
+  color: #901b20;
+}
